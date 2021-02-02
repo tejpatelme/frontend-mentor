@@ -5,4 +5,4 @@ A repository containing all my solutions to the challenges I've done from [front
 | Challenge                | Live Link            |
 | --------------------     | -------------------- |
 | Testimonial Grid Section | [View](https://testimonial-grid-sec.netlify.app) |
-| Single Price Component | [View](https://singleprice-compy.netlify.app) |
+| Single Price Component | [View](https://singleprice-comp.netlify.app/) |
