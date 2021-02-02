@@ -72,6 +72,10 @@ body {
     display: flex;
 }
 
+.stars {
+    margin-right: 30px;
+}
+
 .stars>img {
     padding : 0 2px;
 }
@@ -179,7 +183,7 @@ body {
     }
 
     .stars {
-        margin-bottom: 12px;
+        margin : 0 0 12px 0;
     }
 
     .right-sec p {
