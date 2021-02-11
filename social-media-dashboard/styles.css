@@ -18,6 +18,7 @@ body {
 
 /* light theme colors */
 .light {
+    transition-duration: 0.2s;
     --very-pale-blue : hsl(225, 100%, 98%);
     --card-background : hsl(227, 47%, 96%);
     --text-color-1 : hsl(228, 12%, 44%);
@@ -29,6 +30,7 @@ body {
 
 /* dark theme colors */
 .dark {
+    transition-duration: 0.2s;
     --background-color : hsl(230, 17%, 14%);
     --card-background : hsl(228, 28%, 20%);
     --text-color-1: hsl(228, 34%, 66%);
@@ -37,6 +39,7 @@ body {
 }
 
 /* setting colors and fontsize of element for light theme */
+
 p,small {
     color: var(--text-color-1);
 }
@@ -67,6 +70,40 @@ h1 {
     color: red;
 }
 
+/* creating custom checkbox */
+
+#theme-switcher {
+    position: relative;
+    appearance: none;
+    width: 40px;
+    height: 22px;
+    outline: none;
+    background: gray;
+    border-radius: 20px;
+}
+
+#theme-switcher:checked {
+    background: blue;
+}
+
+#theme-switcher::before {
+    content: '';
+    position: absolute;
+    top : 3px;
+    left : 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background: white;
+    transition-duration: .3s;
+}
+
+#theme-switcher:checked::before{    
+    background: var(--background-color);
+    left: 20px;
+}
+
+
 /* laying out elements */
 
 
@@ -89,6 +126,10 @@ nav {
 .darkmode-toggle {
     display: flex;
     align-items: center;
+}
+
+.darkmode-toggle p{
+    margin-right: 8px;
 }
 
 .socials-overview {
@@ -184,5 +225,19 @@ nav {
 
     .daily-overview {
         gap : 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .darkmode-toggle {
+        margin-top: 32px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    h2 {
+        font-size : 24px;
     }
 }
