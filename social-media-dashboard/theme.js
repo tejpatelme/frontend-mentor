@@ -3,9 +3,9 @@
 //setting the theme in local storagte
 //reading the theme from localstorage on load
 //cheking the checkbox of the theme is dark on load
-let body = document.querySelector('body');
-let darkmode = localStorage.getItem('darkMode');
-let checkbox = document.getElementById("theme-switcher");
+const body = document.querySelector('body');
+const darkmode = localStorage.getItem('darkMode');
+const checkbox = document.getElementById("theme-switcher");
 
 
 if(darkmode == "enabled"){
